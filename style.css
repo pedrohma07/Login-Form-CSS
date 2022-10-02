@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+}
+
+body{
+    background-color: var(--background);
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.login{
+    display: flex;
+    width: 50vw;
+    justify-content: center;
+}
+.logo{
+    position: fixed;
+    justify-self: flex-start;
+}
+.login-bloco{
+    width: 80%;
+    height: 60%;
+    background-color: var(--form-background);
+    align-self: center;
+    
+}
+.img-capa{
+    width: 50%;
+    height: 100vh;
+    background: url(images/side-image-2x.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
