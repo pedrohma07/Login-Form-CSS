@@ -39,7 +39,7 @@ body{
     align-items: center;
 }
 .logo{
-    position: fixed;
+    position: absolute;
     width: 50vw;
 }
 .logo img{
@@ -50,7 +50,7 @@ body{
     flex-direction: column;
     justify-content: center;
     width: 40%;
-    height: 60%;
+    height: 450px;
     padding: 0 20%;
     background-color: var(--form-background);
 }
