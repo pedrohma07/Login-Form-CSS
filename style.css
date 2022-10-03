@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -11,10 +13,19 @@
 }
 h1{
     color: var(--text-title);
+    font-size: 24px;
+    margin: 5x 0;
+}
+h2{
+    font-size: 12px;
+    margin: 10px 0;
 }
 body{
     background-color: var(--background);
     color: var(--text-base);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
 }
 
 .container{
@@ -35,9 +46,12 @@ body{
     margin: 20px;
 }
 .login-bloco{
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
     height: 60%;
-    padding: 0 10%;
+    padding: 0 20%;
     background-color: var(--form-background);
 }
 .img-capa{
@@ -50,4 +64,78 @@ body{
 }
 .titulo-bloco-login{
     display: flex;
+}
+.div-input{
+    display: flex;
+    flex-direction: column;
+    width: 100%;  
+}
+.div-input div{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid var(--text-base);
+    border-radius: 5px;
+}
+.div-input div input{
+    background-color: var(--form-background);
+    border: none;
+    height: 90%;
+    width: 75%;
+    color: var(--text-base);
+}
+.div-input div input:focus-within{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+.div-input div:focus-within{
+    border: 2px solid var(--primary-color);
+}
+
+.icon-email{
+    width: 20px;
+    height: 20px;
+    background-image: url(images/mail.svg);
+}
+
+#email{
+    justify-self: flex-start;
+    width: 85%;
+}
+.tal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 30%;
+}
+.lembre-me{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.lembre-me span{
+    display: flex;
+    align-items: center;
+    
+}
+a{
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.entrar{
+    font-weight: bold;
+    height: 40px;
+    width: 100%;
+    align-self: center;
+    background-color: var(--primary-color);
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.registrar{
+    text-align: center;
 }
