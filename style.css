@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
 }
-
 :root {
     --text-base: #afb6c2;
     --text-title: #d4ccb6;
@@ -10,9 +9,12 @@
     --form-background: #24221f;
     --primary-color: #ffc632;
 }
-
+h1{
+    color: var(--text-title);
+}
 body{
     background-color: var(--background);
+    color: var(--text-base);
 }
 
 .container{
@@ -23,17 +25,20 @@ body{
     display: flex;
     width: 50vw;
     justify-content: center;
+    align-items: center;
 }
 .logo{
     position: fixed;
-    justify-self: flex-start;
+    width: 50vw;
+}
+.logo img{
+    margin: 20px;
 }
 .login-bloco{
-    width: 80%;
+    width: 50%;
     height: 60%;
+    padding: 0 10%;
     background-color: var(--form-background);
-    align-self: center;
-    
 }
 .img-capa{
     width: 50%;
@@ -42,4 +47,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
+}
+.titulo-bloco-login{
+    display: flex;
 }
